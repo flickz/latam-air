@@ -1,0 +1,1 @@
+var template_infoPopin=$('<script id="info_popin" type="text/x-jquery-tmpl">'+"<div>"+'<header class="caption4">'+'<h3 class="h6">{{html title}}</h3>'+"</header>"+'<section style="background: none repeat scroll 0 0 #FFFFFF;padding: 8px;">'+'<p class="hr">{{html text}}</p>'+"</section>"+'<footer class="wrap caption4 default"></footer>'+"</div>"+"<\/script>");

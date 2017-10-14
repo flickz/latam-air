@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://banner.boostbox.com.br/api/v1/storage?bb_id=dce6f2942469bcb8942b7fb24cb515f1530deb4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <script>
+    "use strict";window.XdUtils=window.XdUtils||function(){function n(n,t){var r,i=t||{};for(r in n)n.hasOwnProperty(r)&&(i[r]=n[r]);return i}return{extend:n}}();
+  </script> -->
+
+  <script type="text/javascript">
+    function lsTest(){
+      var test = 'test';
+      try {
+          localStorage.setItem(test, test);
+          localStorage.removeItem(test);
+          return true;
+      } catch(e) {
+          return false;
+      }
+    }
+    function prepend(value, array) {
+      var newArray = array.slice(0);
+      newArray.unshift(value);
+      return newArray;
+    }
+    function cache_url() {
+      var referer = "https://book.latam.com/TAM/dyn/air/booking/upslDispatcher;jsessionid=t3cV6EGp-tuTC7YuJYjiZl8au-UptN03GmwNyq0F44TTMOupreFo!-89490866!-2121261318";
+      if (!referer || referer == '' || referer.indexOf('boostbox.com.br') !== -1) { 
+        return false; 
+      }
+      
+      var urls = [];
+      var key = 'bb-urls';
+      
+      try {
+        urls = JSON.parse(localStorage.getItem(key)).slice(0, 15);
+      
+      } catch(err) {
+        urls = [];
+      
+      }
+      
+      if (!Array.isArray(urls)) { 
+        urls = [] 
+      }
+    
+      var xdIndex = urls.indexOf(referer);
+      if (xdIndex !== -1) {
+        urls.splice(xdIndex, 1);
+      }
+
+      urls = JSON.stringify(prepend(referer, urls));
+
+      localStorage.setItem(key, urls);
+      localStorage.setItem('bb_id', 'dce6f2942469bcb8942b7fb24cb515f1530deb4');
+    };
+    
+    if(lsTest() === true) { cache_url(); }
+  </script>
+
+
+</head>
+<body>
+
+
+</body></html>
