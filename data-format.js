@@ -1,16 +1,4 @@
 var Sampleformat = [
-  // {
-  //   deptCode: 'CTY',
-  //   destinationCode: 'SAO',
-  //   deptTime: '23:23',
-  //   arrivalTime: '34-23',
-  //   totalDuration: '1:20',
-  //   price: '1,230',
-  //   tax: '43',
-  //   airLine: 'LATAM',
-  //   flightNumber: 'JJ2343',
-  //   stop: []
-  // },
   {
     tax: '123',
     totalDuration: '1:20',
